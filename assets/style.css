@@ -40,3 +40,17 @@ p {
 	border: 5px solid gray;
 	box-shadow: 5px 10px #888888;
 }
+
+.roman{
+	list-style-type: upper-roman;
+}
+
+.bold.heading {
+	color: white;
+	background-color: blue;
+	
+}
+
+.highlight {
+	color: blueviolet;
+}
