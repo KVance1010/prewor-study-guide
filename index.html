@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./assets/style.css">
   </link>
+  <script src="./assets/script.js" defer></script>
+  <link rel="icon" href="#" />
   <title>Prework Study Guide</title>
 </head>
 
@@ -14,6 +16,7 @@
   <header id="header">
     <h1>Prework Study Guide</h1>
     <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+    <h2>✨ Open the Console to See What's Happening ✨</h2>
   </header>
   <main>
     <section class="card" id="html-section">
@@ -24,9 +27,9 @@
         <li>The body element has child elements of header, main, and footer</li>
         <li>Sections are used to break up the content of the page. </li>
         <li>"id" and "class" are used by HTML to classify specific elements of a page</li>
-        <li> <a href = "https://htmlcolorcodes.com/color-picker/">HTML Color Chart</a> </li>
-        <li> <a href = "https://unicode-table.com/en/sets/">HTML Unicode</a> </li>
-        <li> <a href = "https://jigsaw.w3.org/css-validator/">HTML and CSS Validation Tool</a> </li>
+        <li> <a href="https://htmlcolorcodes.com/color-picker/">HTML Color Chart</a> </li>
+        <li> <a href="https://unicode-table.com/en/sets/">HTML Unicode</a> </li>
+        <li> <a href="https://jigsaw.w3.org/css-validator/">HTML and CSS Validation Tool</a> </li>
       </ul>
     </section>
 
@@ -35,47 +38,68 @@
       <ul>
         <li>A margin indicates how much space we want around the outside of an element.</li>
         <li>A padding indicates how much space we want around the content inside an element.</li>
-        <li class = "bold heading">Value Selectors </li>
-          <ul class="roman">
-            <li> <span class= "highlight">Selector:</span>  element[attr] <span class= "highlight">Example:</span>  a[href="https://example.com"] <span class= "highlight">Description:</span>exactly matches</li>
-            <li><span class= "highlight">Selector:</span> element[attr~= value] <span class= "highlight">Example:</span> p[class~="special"] <span class= "highlight">Description:</span> exactly value or contains value in a
-              list</li>
-            <li><span class= "highlight">Selector:</span> element[attr|=value] <span class= "highlight">Example:</span> div[lang|="zh"] <span class= "highlight">Description:</span> exactly value or begins with value
-              immediately followed by a hyphen</li>
-          </ul>
+        <li class="bold heading">Value Selectors </li>
+        <ul class="roman">
+          <li> <span class="highlight">Selector:</span> element[attr] <span class="highlight">Example:</span>
+            a[href="https://example.com"] <span class="highlight">Description:</span>exactly matches</li>
+          <li><span class="highlight">Selector:</span> element[attr~= value] <span class="highlight">Example:</span>
+            p[class~="special"] <span class="highlight">Description:</span> exactly value or contains value in a
+            list</li>
+          <li><span class="highlight">Selector:</span> element[attr|=value] <span class="highlight">Example:</span>
+            div[lang|="zh"] <span class="highlight">Description:</span> exactly value or begins with value
+            immediately followed by a hyphen</li>
+        </ul>
         <br>
-        <li class = "bold heading">Substring Selectors</li>        
-          <ul class="roman">
-            <li><span class= "highlight">Selector:</span> element[attr^= value] <span class= "highlight">Example:</span> li[class^="box-"] <span class= "highlight">Description:</span> value begins with</li>
-            <li><span class= "highlight">Selector:</span> element[attr$= value] <span class= "highlight">Example:</span> li[class$="box-"] <span class= "highlight">Description:</span> value ends with</li>
-            <li><span class= "highlight">Selector:</span> element[attr*= value] <span class= "highlight">Example:</span> li[class*="box-"] <span class= "highlight">Description:</span> value contains the value anywhere</li>
-          </ul>
+        <li class="bold heading">Substring Selectors</li>
+        <ul class="roman">
+          <li><span class="highlight">Selector:</span> element[attr^= value] <span class="highlight">Example:</span>
+            li[class^="box-"] <span class="highlight">Description:</span> value begins with</li>
+          <li><span class="highlight">Selector:</span> element[attr$= value] <span class="highlight">Example:</span>
+            li[class$="box-"] <span class="highlight">Description:</span> value ends with</li>
+          <li><span class="highlight">Selector:</span> element[attr*= value] <span class="highlight">Example:</span>
+            li[class*="box-"] <span class="highlight">Description:</span> value contains the value anywhere</li>
+        </ul>
         <br>
-        <li class = "bold heading">Combinators</li>
-          <ul class="roman">
-            <li><span class= "highlight">Descendant</span> Combinators: " "(space) <span class= "highlight">Example:</span> div span <span class= "highlight">Description:</span> more specific element selection</li>
-            <li><span class= "highlight">Child Combinators:</span > &#62; <span class= "highlight">Example:</span> ul>ui <span class= "highlight">Description:</span> selects nodes that are the direct children of the element</li>
-            <li><span class= "highlight">General Sibling Combinator:</span> ~ <span class= "highlight">Example:</span> p ~ span <span class= "highlight">Description:</span> will match all elements that follow the first element</li>
-            <li><span class= "highlight">Adjacent Sibling Combinator:</span> + <span class= "highlight">Example:</span> h2 + p<span class= "highlight">Description:</span> matches the second element only if it immediately follows the first element</li>
-            <li><span class= "highlight">Column Combinator:</span> || <span class= "highlight">Example:</span> col || td <span class= "highlight">Description:</span> will match all td elements that belong to the scope of the column </td></li>
-          </ul>
+        <li class="bold heading">Combinators</li>
+        <ul class="roman">
+          <li><span class="highlight">Descendant</span> Combinators: " "(space) <span class="highlight">Example:</span>
+            div span <span class="highlight">Description:</span> more specific element selection</li>
+          <li><span class="highlight">Child Combinators:</span> &#62; <span class="highlight">Example:</span> ul>ui
+            <span class="highlight">Description:</span> selects nodes that are the direct children of the element</li>
+          <li><span class="highlight">General Sibling Combinator:</span> ~ <span class="highlight">Example:</span> p ~
+            span <span class="highlight">Description:</span> will match all elements that follow the first element</li>
+          <li><span class="highlight">Adjacent Sibling Combinator:</span> + <span class="highlight">Example:</span> h2 +
+            p<span class="highlight">Description:</span> matches the second element only if it immediately follows the
+            first element</li>
+          <li><span class="highlight">Column Combinator:</span> || <span class="highlight">Example:</span> col || td
+            <span class="highlight">Description:</span> will match all td elements that belong to the scope of the
+            column </td>
+          </li>
+        </ul>
 
-          <li class = "bold heading">Pseudo-classes and Pseudo-elements </li>
-          <ul class="roman">
-            <li><span class= "highlight">Pseudo class:</span> : <span class= "highlight">Example:</span> a:visited <span class= "highlight">Description:</span> select elements based on a state (:hover, :fullscreen, :modal, :picture-in-picture, :first-child, :autofill,
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" >More Examples</a></li>
-            <li><span class= "highlight">Pseudo Element:</span> :: <span class= "highlight">Example:</span> p::first-line <span class= "highlight">Description:</span> will match all specified element.  (every first line of a p element)</li>
-            <li>Pseudo-classes and Pseudo-elements can be combined. <span class= "highlight">Example:</span> article p:first-child::first-line{}</li> 
-            <li>Content can be added to HTML with CSS: <span class= "highlight">Example:</span> .box::before{content: "this will be added to the html page."} <span class= "highlight">Example:</span> .box::before or .box::after</li>
-          
-          </ul>
-          <ul>    
-             <li class= "highlight">Flex-box and Grid</li> 
-            <li>Flex-box if good for single column organization</li>
-            <li>Grid allows you to layout the page horizontally and verticality</li>
-          </ul>
+        <li class="bold heading">Pseudo-classes and Pseudo-elements </li>
+        <ul class="roman">
+          <li><span class="highlight">Pseudo class:</span> : <span class="highlight">Example:</span> a:visited <span
+              class="highlight">Description:</span> select elements based on a state (:hover, :fullscreen, :modal,
+            :picture-in-picture, :first-child, :autofill,
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">More Examples</a>
+          </li>
+          <li><span class="highlight">Pseudo Element:</span> :: <span class="highlight">Example:</span> p::first-line
+            <span class="highlight">Description:</span> will match all specified element. (every first line of a p
+            element)</li>
+          <li>Pseudo-classes and Pseudo-elements can be combined. <span class="highlight">Example:</span> article
+            p:first-child::first-line{}</li>
+          <li>Content can be added to HTML with CSS: <span class="highlight">Example:</span> .box::before{content: "this
+            will be added to the html page."} <span class="highlight">Example:</span> .box::before or .box::after</li>
 
         </ul>
+        <ul>
+          <li class="highlight">Flex-box and Grid</li>
+          <li>Flex-box if good for single column organization</li>
+          <li>Grid allows you to layout the page horizontally and verticality</li>
+        </ul>
+
+      </ul>
     </section>
 
     <section class="card" id="git-section">
@@ -92,10 +116,16 @@
     <section class="card" id="javascript-section">
       <h2>JavaScript</h2>
       <ul>
-        <li>Enter your JavaScript notes here</li>
-        <li>Enter your JavaScript notes here</li>
-        <li>Enter your JavaScript notes here</li>
-        <li>Enter your JavaScript notes here</li>
+        <li>Splice and Slice can be used to alter an array. Splice will change the array, where as slice does not. </li>
+        <li>Split can be used to break up a string Example: stringV = "John,Pete,Harry" stringV.split(",", 3) (break
+          point, how many words) no value is more common for the 2nd part</li>
+        <li>Substring can be used to break up a string: (start index, end index). Substring and Slice are the same.
+          Slice can use neg numbers to start from the end</li>
+        <li>myText.replace('Kyle', 'John')  ... or replaceAll</li>
+        <li>Join can be used to make a string out of an array. Split is a string to an array.</li>
+        <li>Default parameters. Example: hello(name = 'chris') specifying a default values</li>
+        <li>"truthy" and "falsy". falsy is 0, on, "", null, undefined, and NaN.</li>
+        <li></li>
       </ul>
     </section>
   </main>
